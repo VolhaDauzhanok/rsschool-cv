@@ -1,12 +1,105 @@
-<!DOCTYPE HTML>
-<html lang="ru">
- <head>
-  <meta charset="utf-8">
-  <title>CV#2. HTML, CSS &amp; Git Basics</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cv</title>
   <link rel="stylesheet" href="style.css">
- </head>
- <body>
-   <h1>CV#2. HTML, CSS &amp; Git Basics</h1>
-   <p>Ваша задача - в репозитории rsschool-cv от ветки gh-pages создать ветку rsschool-cv-html, добавить в неё файлы index.html и style.css с произвольным содержимым, задеплоить их на GitHub Pages.</p>
- </body>
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class = "header">
+    <div class = "container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contact information</a></li>
+          <li class="nav-item"><a href="#certification" class="nav-link">Certification</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class = "main">
+    <div class = "container, flex-container">
+      <section class = "profile-section" id="profile">
+        <div class="profile-name">
+          <h1 class= "section-title">Volha Dauzhanok</h1>
+          <h2 class = "section-title">Junior Frontend Developer</h2>
+        </div>
+        <img class="profile-photo" src="assets/img/profile photo.jpg" height = 200px  alt="profile photo">
+      </section>
+      <section class="section" id="contacts">
+        <h2 class= "section-title">Contact information</h2>
+        <ul class="contact-list">
+          <li class="contact-item">Phone: +375 (29) 353-04-38</li>
+          <li class="contact-item"><a class="link" href="mailto:olidovzhenok@gmail.com">Send Email</a> olidovzhenok@gmail.com</li>
+          <li class="contact-item"><a class="link" href="https://www.linkedin.com/in/olga-dovzhenok/">LinkedIn</a></li>
+        </ul>
+      </section>
+      <section class="section" id="certification">
+        <h2 class= "section-title">Certification</h2>
+        <p>Oracle Certified Associate, Java 8 SE Programmer (1Z0-808)</p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class= "section-title">Skills</h2>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <span class="skill-item-title">Programming Languages:</span> Java, JavaScript, SQL, ABAP/4, C/C++.
+          </li>
+          <li class="skill-item">
+            <span class="skill-item-title">Web Technologies:</span> JEE, Spring MVC, Spring Boot, REST, SOAP, CSS, Web Services, XSL, XSLT, XSD, JSON.
+          </li>
+          <li class="skill-item">
+            <span class="skill-item-title">Application Servers:</span> Tomcat, IBM WebSphere Application Server, Apache HTTP Server.
+          </li>
+          <li class="skill-item">
+            <span class="skill-item-title">Databases:</span> Oracle, IBM DB2, Microsoft SQL Server, Microsoft Access.
+          </li>
+          <li class="skill-item">
+            <span class="skill-item-title">Operating Systems:</span> Windows, Linux.
+          </li>
+          <li class="skill-item">
+            <span class="skill-item-title">Development Tools:</span> Eclipse,  Maven, Jenkins, Git, Gerrit, Sonar, Postman, Teams.
+          </li>
+          <li class="skill-item">
+            <span class="skill-item-title">Foreign Languages:</span> English Upper-Intermediate
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="education">
+        <h2 class= "section-title">Education</h2>
+        <ul class="education-list">
+          <li class="education-item">
+            Specialized in «Economical cybernetics», mathematician- economist: Graduated. Gomel State University, Gomel (June 2012)
+          </li>
+          <li class="education-item">
+            OpenSAP course ABAP Development for SAP HANA
+          </li>
+          <li class="education-item">
+            OpenSAP course Next Steps in Software Development on SAP HANA
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class = "footer">
+    <div class = "container, flex-container">
+      <div class="footer-block">
+        <a href="https://rs.school/js/"><img src="assets/img/rs_school_js.svg" width="50" 
+          height="50" alt="RS School"></a>
+      </div>
+      <div class="footer-block">
+        <a class="link" href="https://github.com/VolhaDauzhanok">Volha Dauzhanok<br>GitHub</a>
+      </div>
+      <div class="footer-block">
+        <p>&copy;2020</p>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
